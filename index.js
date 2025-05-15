@@ -41,7 +41,6 @@ function renderChores() {
     newItem.focus()
 
     if (totalChoreBefore > 0 && totalChoreAfter === 0) {
-        console.log(totalChoreBefore, totalChoreAfter)
         const randomIndex = Math.floor(Math.random() * 5)
         const srcGif = `./assets/gif/${randomIndex}.gif`
         imageEl.src = srcGif
