@@ -117,3 +117,21 @@ img {
 img.show {
     display: block;
 }
+
+@media screen and (max-width: 500px) {
+    .input-group {
+        display: grid;
+    }
+
+    input[type="text"] {
+        grid-column: 1/3;
+    }
+
+    .btn-add {
+        grid-column: 1/2;
+    }
+
+    .btn-del {
+        grid-column: 2/3;
+    }
+}
