@@ -121,6 +121,7 @@ img.show {
 @media screen and (max-width: 500px) {
     .input-group {
         display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
     }
 
     input[type="text"] {
