@@ -1,0 +1,119 @@
+/*
+
+COLOR PALETTE
+
+WHITE: #FEFEFE
+BLACK: #000000
+TEXT INPUT BACKGROUND: #EEEEEE
+ADD BUTTON: #FFCC68
+DELETE BUTTON: #FF9548
+CHORE: #FBDF7C
+
+*/
+:root {
+    --white: #FEFEFE;
+    --black: #000000;
+    --bg-input: #EEEEEE;
+    --clr-input: #A4A4A4;
+    --bg-btn-add: #FFCC68;
+    --bg-btn-del: #FF9548;
+    --chore: #FBDF7C;  
+    --size-md: 1.875rem;
+    --size-lg: 4.375rem;
+    --radius-sm: 0.625rem;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 40rem;
+    margin-inline: auto;
+    display: grid;
+    place-items: center;
+    color: var(--black);
+    gap: 1rem;
+    padding-inline: 1rem;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.choreslist {
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.chore-item {
+    display: block;
+    width: 100%;
+    background-color: var(--chore);
+    border: none;
+}
+
+h1 {
+    font-family: 'Concert One', cursive;
+    font-size: var(--size-lg);
+}
+
+button {
+    height: 5.75rem;
+    font-size: var(--size-md);
+    border-radius: var(--radius-sm);
+    min-width: 5.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 100%;
+    border-radius: var(--radius-sm);
+    border: none;
+    background-color: var(--bg-input);
+    color: var(--black);
+    text-align: center;
+    font-size: var(--size-md);
+}
+
+.btn-del {
+    background-color: var(--bg-btn-del);
+}
+
+.btn-add {
+    background-color: var(--bg-btn-add);
+}
+
+.error-text {
+    background-color: #FFE4E6;
+    color: #F43F5E;
+    font-style: italic;
+    padding: .25rem;
+    width: 100%;
+    border-radius: var(--radius-sm);
+    text-align: center;
+    display: none;
+}
+
+.error-text.show {
+    display: block;
+}
+
+img {
+    display: none;
+}
+
+img.show {
+    display: block;
+}
